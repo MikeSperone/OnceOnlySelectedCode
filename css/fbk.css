@@ -1,0 +1,391 @@
+html, body {font-size:14px; font-family:'Droid Sans', sans-serif; font-weight:400; color:#222; margin:0; padding:0; overflow: hidden;}
+::-moz-selection { /* Code for Firefox */ background: red;  }
+::selection { background: red; }
+html.overflow {overflow:auto;}
+
+#main-content {position: relative; margin-top:0; overflow:visible; padding:0;}
+.information {font-size: 14px; line-height: 1.6em; width: 100%; text-align: justify; -ms-text-justify: distribute-all-lines; text-justify: distribute-all-lines;}
+.box {position:relative; padding: 10px; width:600px; margin-left:auto; margin-right:auto; z-index:9999;}
+.big-box { padding: 10px; top:0px; max-width:1160px; margin-left:auto; margin-right:auto; z-index:9999;}
+#container {min-height:100%; position:relative; vertical-align:middle;}
+
+/* HEADERS */
+header {font-size: 30px; font-weight:400; text-align: center; width: 100%; padding-top:1.5em; }
+#interview-header {padding-top:10px;}
+.header-menu{position: fixed; top:0; width:100%; height:195px; background: #ffffff;}
+
+/* LINKS */
+a { color:#222; text-decoration:none;}
+a:visited {color:#444; text-decoration:none;}
+a:hover {color: #FF0000;}
+a.contentLink {color:#FF0000;}
+a.contentLink:visited {color:#FF0000;}
+a.contentLink:hover {color:#AAA;}
+a.inactive {color: #ABABAB !important;}
+a.inactive:hover {color:#EEE !important;}
+
+footer {position:fixed; font-size:10px; line-height:3em; bottom:0; width:100%; height:40px; text-align:center; background:#FFFFFF;}
+
+#comment-on-your-video {
+    position: fixed;
+    width: 600px;
+    bottom: 35px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.button {position:relative; float:right; font-size:15px; vertical-align:middle; width:96px; height:23px; background: #FFF; border-radius: 0 2px 2px 0; border: 1px solid #F00;}
+textarea {font-style: 'Droid Sans', sans-serif;}
+#comment-input {width:100%;}
+
+.comment-section {display: table-cell; vertical-align: bottom; height:20%;}
+.video-comment {display: table-cell; vertical-align: bottom; padding:10px;}
+.actual-comment {display: table-cell; padding:5px; background:rgba(255, 255, 255, .5);}
+.comment-icon {position:absolute; background:rgba(255, 255, 255, .5); padding:5px; margin:5px; bottom:0; right:0;}
+
+div.portfolio {display:inline-block; max-width:100%; padding:10px; text-align:center; margin-left:auto; margin-right:auto;}
+div.portfolio.left {max-width:360px;}
+div.portfolio.center {max-width:360px;}
+div.portfolio.right {max-width:360px;}
+
+div.video-alt-side { width: 360px; height:270px; text-align:center; vertical-align: middle; overflow: auto; background-color: #F0F0F0;}
+div.video-alt-center { width: 360px; height: 270px; text-align:center; vertical-align: middle; overflow: auto; background-color: #F0F0F0;}
+
+.rowOne {
+    display: table;
+    width: 320px;
+    height: 240px;
+    filter : grayscale(5%) blur(1px);
+    -o-filter : grayscale(5%) blur(1px);
+    -ms-filter : grayscale(5%) blur(1px);
+    -moz-filter : grayscale(5%) blur(1px);
+    -webkit-filter : grayscale(5%) blur(1px);
+
+    z-index: 100;
+
+    transition:
+        filter 1s ease-out,
+        width 1s ease-out,
+        height 1s ease-out,
+        left 1s ease-out,
+        top 1s ease-out;
+
+    -webkit-transition:
+        -webkit-filter 1s ease-out,
+        width 1s ease-out,
+        height 1s ease-out,
+        left 1s ease-out,
+        top 1s ease-out;
+
+    -moz-transition:
+        -moz-filter 1s ease-out,
+        width 1s ease-out,
+        height 1s ease-out,
+        left 1s ease-out,
+        top 1s ease-out;
+
+    -ms-transition:
+        -ms-filter 1s ease-out,
+        width 1s ease-out,
+        height 1s ease-out,
+        left 1s ease-out,
+        top 1s ease-out;
+
+    -o-transition:
+        -o-filter 1s ease-out,
+        width 1s ease-out,
+        height 1s ease-out,
+        left 1s ease-out,
+        top 1s ease-out;
+}
+
+.rowTwo {
+    display: table;
+    width: 240px;
+    height: 180px;
+    filter : grayscale(15%) blur(2px);
+    -o-filter : grayscale(15%) blur(2px);
+    -ms-filter : grayscale(15%) blur(2px);
+    -moz-filter : grayscale(15%) blur(2px);
+    -webkit-filter : grayscale(15%) blur(2px);
+
+    z-index: 90;
+
+    transition:
+        filter 2s ease-out,
+        width 2s ease-out,
+        height 2s ease-out,
+        left 2s ease-out,
+        top 2s ease-out;
+
+    -webkit-transition:
+        -webkit-filter 2s ease-out,
+        width 2s ease-out,
+        height 2s ease-out,
+        left 2s ease-out,
+        top 2s ease-out;
+
+    -moz-transition:
+        -moz-filter 2s ease-out,
+        width 2s ease-out,
+        height 2s ease-out,
+        left 2s ease-out,
+        top 2s ease-out;
+
+    -ms-transition:
+        -ms-filter 2s ease-out,
+        width 2s ease-out,
+        height 2s ease-out,
+        left 2s ease-out,
+        top 2s ease-out;
+
+    -o-transition:
+        -o-filter 2s ease-out,
+        width 2s ease-out,
+        height 2s ease-out,
+        left 2s ease-out,
+        top 2s ease-out;
+
+}
+
+.rowThree {
+    display: table;
+    width: 160px;
+    height: 120px;
+    filter : grayscale(30%) blur(3px);
+    -o-filter : grayscale(30%) blur(3px);
+    -ms-filter : grayscale(30%) blur(3px);
+    -moz-filter : grayscale(30%) blur(3px);
+    -webkit-filter : grayscale(30%) blur(3px);
+
+    z-index: 80;
+
+    transition:
+        filter 2.75s ease-out,
+        width 2.75s ease-out,
+        height 2.75s ease-out,
+        left 2.75s ease-out,
+        top 2.75s ease-out;
+
+    -webkit-transition:
+        -webkit-filter 2.75s ease-out,
+        width 2.75s ease-out,
+        height 2.75s ease-out,
+        left 2.75s ease-out,
+        top 2.75s ease-out;
+
+    -moz-transition:
+        -moz-filter 2.75s ease-out,
+        width 2.75s ease-out,
+        height 2.75s ease-out,
+        left 2.75s ease-out,
+        top 2.75s ease-out;
+
+    -ms-transition:
+        -ms-filter 2.75s ease-out,
+        width 2.75s ease-out,
+        height 2.75s ease-out,
+        left 2.75s ease-out,
+        top 2.75s ease-out;
+
+    -o-transition:
+        -o-filter 2.75s ease-out,
+        width 2.75s ease-out,
+        height 2.75s ease-out,
+        left 2.75s ease-out,
+        top 2.75s ease-out;
+
+}
+
+.rowFour {
+    display: table;
+    width: 120px;
+    height: 90px;
+    filter : grayscale(50%) blur(4px);
+    -o-filter : grayscale(50%) blur(4px);
+    -ms-filter : grayscale(50%) blur(4px);
+    -moz-filter : grayscale(50%) blur(4px);
+    -webkit-filter : grayscale(50%) blur(4px);
+
+    z-index: 70;
+
+    transition:
+        filter 3.5s ease-out,
+        width 3.5s ease-out,
+        height 3.5s ease-out,
+        left 3.5s ease-out,
+        top 3.5s ease-out;
+
+    -webkit-transition:
+        -webkit-filter 3.5s ease-out,
+        width 3.5s ease-out,
+        height 3.5s ease-out,
+        left 3.5s ease-out,
+        top 3.5s ease-out;
+
+    -moz-transition:
+        -moz-filter 3.5s ease-out,
+        width 3.5s ease-out,
+        height 3.5s ease-out,
+        left 3.5s ease-out,
+        top 3.5s ease-out;
+
+    -ms-transition:
+        -ms-filter 3.5s ease-out,
+        width 3.5s ease-out,
+        height 3.5s ease-out,
+        left 3.5s ease-out,
+        top 3.5s ease-out;
+
+    -o-transition:
+        -o-filter 3.5s ease-out,
+        width 3.5s ease-out,
+        height 3.5s ease-out,
+        left 3.5s ease-out,
+        top 3.5s ease-out;
+
+}
+
+.rowFive {
+    display: table;
+    width: 100px;
+    height: 75px;
+    filter : grayscale(75%) blur(5px);
+    -o-filter : grayscale(75%) blur(5px);
+    -ms-filter : grayscale(75%) blur(5px);
+    -moz-filter : grayscale(75%) blur(5px);
+    -webkit-filter : grayscale(75%) blur(5px);
+
+
+    z-index: 60;
+
+    transition:
+        filter 4.25s ease-out,
+        width 4.25s ease-out,
+        height 4.25s ease-out,
+        left 4.25s ease-out,
+        top 4.25s ease-out;
+
+    -webkit-transition:
+        -webkit-filter 4.25s ease-out,
+        width 4.25s ease-out,
+        height 4.25s ease-out,
+        left 4.25s ease-out,
+        top 4.25s ease-out;
+
+    -moz-transition:
+        -moz-filter 4.25s ease-out,
+        width 4.25s ease-out,
+        height 4.25s ease-out,
+        left 4.25s ease-out,
+        top 4.25s ease-out;
+
+    -ms-transition:
+        -ms-filter 4.25s ease-out,
+        width 4.25s ease-out,
+        height 4.25s ease-out,
+        left 4.25s ease-out,
+        top 4.25s ease-out;
+
+    -o-transition:
+        -o-filter 4.25s ease-out,
+        width 4.25s ease-out,
+        height 4.25s ease-out,
+        left 4.25s ease-out,
+        top 4.25s ease-out;
+
+}
+
+
+.frontRow {
+    display: table;
+    width: 480px;
+    height: 360px;
+
+    filter : grayscale(0) blur(0);
+    -o-filter : grayscale(0) blur(0);
+    -ms-filter : grayscale(0) blur(0);
+    -moz-filter : grayscale(0) blur(0);
+    -webkit-filter : grayscale(0) blur(0);
+
+    -webkit-transform: translate(0) !important;
+    -moz-transform: translate(0) !important;
+    -ms-transform: translate(0) !important;
+    -o-transform: translate(0) !important;
+    transform: translate(0) !important;
+
+    z-index: 999;
+
+    transition:
+        filter 3s ease-out,
+        width 3s ease-out,
+        height 3s ease-out,
+        left 3s ease-out,
+        top 3s ease-out;
+
+    -webkit-transition:
+        -webkit-filter 3s ease-out,
+        width 3s ease-out,
+        height 3s ease-out,
+        left 3s ease-out,
+        top 3s ease-out;
+
+    -moz-transition:
+        -moz-filter 3s ease-out,
+        width 3s ease-out,
+        height 3s ease-out,
+        left 3s ease-out,
+        top 3s ease-out;
+
+    -ms-transition:
+        -ms-filter 3s ease-out,
+        width 3s ease-out,
+        height 3s ease-out,
+        left 3s ease-out,
+        top 3s ease-out;
+
+    -o-transition:
+        -o-filter 3s ease-out,
+        width 3s ease-out,
+        height 3s ease-out,
+        left 3s ease-out,
+        top 3s ease-out;
+
+}
+
+.focus {
+    z-index: 1000 !important;
+    filter : grayscale(0) blur(0) !important;
+    -o-filter : grayscale(0) blur(0) !important;
+    -ms-filter : grayscale(0) blur(0) !important;
+    -moz-filter : grayscale(0) blur(0) !important;
+    -webkit-filter : grayscale(0) blur(0) !important;
+
+    transition: filter .5s ease-out;
+    -webkit-transition: -webkit-filter .5s ease-out;
+    -moz-transition: -moz-filter .5s ease-out;
+    -ms-transition: -ms-filter .5s ease-out;
+    -o-transition: -o-filter .5s ease-out;
+}
+
+.coverFocus {
+    z-index: 1001 !important;
+}
+
+.videos, .comments {
+    display: table;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: inherit;
+    width: inherit;
+}
+
+.hide {
+    display: none;
+
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
